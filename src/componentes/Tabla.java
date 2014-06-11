@@ -25,7 +25,7 @@ public class Tabla extends JTable {
     public Tabla(TableModel modelo) {
         setModel(modelo);
         setTableEditor();
-        setComlumnsSize();
+        setColumnsSize();
         setTamano();
     }
 
@@ -65,7 +65,7 @@ public class Tabla extends JTable {
         setPreferredSize(dimension);
     }
 
-    private void setComlumnsSize() {
+    private void setColumnsSize() {
         for (int i = 0; i < 5; i++) {
             TableColumn columna = getColumnModel().getColumn(i);
             if (i == 0 || i == 4) {
